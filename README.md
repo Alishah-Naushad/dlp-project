@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Segformer Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hugging Face Links
+- Model: [Segformer Fine tuned Model](https://huggingface.co/AliShah07/segformer-b0-finetuned-segments-stamp-verification2)
+- Dataset: [StaVer Annotated Dataset](https://huggingface.co/datasets/AliShah07/stamp-verification)
 
-## Available Scripts
+## Segformer Image
+![Segformer Image](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/segformer_architecture.png)
 
-In the project directory, you can run:
+## Data_Model_Train.ipynb
+The `Data_Model_Train.ipynb` file is used for fine-tuning the Segformer model. Before running the notebook, ensure that you have your Hugging Face token and Segments.ai token ready. You'll need to modify the code according to your Hugging Face ID name and the name you want to assign to your fine-tuned model.
 
-### `npm start`
+## server.ipynb
+The `server.ipynb` notebook should be run alongside your React app. Before running the notebook, make sure to update it with your own Ngrok token. After running Ngrok, use the generated URL in your API calls from the frontend to communicate with the server.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running the React App
+To run the React app:
+1. Navigate to the project directory in your terminal.
+2. Install dependencies by running `npm install`.
+3. Start the development server with `npm start`.
+4. Open your web browser and go to `http://localhost:3000` to view the React app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Evaluation Metrics
+Loss: 0.0365
+Mean Iou: 0.1372
+Mean Accuracy: 0.2744
+Overall Accuracy: 0.2744
+Accuracy Unlabeled: nan
+Accuracy Stamp: 0.2744
+Iou Unlabeled: 0.0
+Iou Stamp: 0.2744
