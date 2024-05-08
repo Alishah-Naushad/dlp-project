@@ -21,11 +21,11 @@ To run the React app:
 4. Open your web browser and go to `http://localhost:3000` to view the React app.
 
 ## Evaluation Metrics
-Loss: 0.0365
-Mean Iou: 0.1372
-Mean Accuracy: 0.2744
-Overall Accuracy: 0.2744
-Accuracy Unlabeled: nan
-Accuracy Stamp: 0.2744
-Iou Unlabeled: 0.0
-Iou Stamp: 0.2744
+- Loss: 0.0365
+- Mean Iou: 0.1372
+- Mean Accuracy: 0.2744
+- Overall Accuracy: 0.2744
+- Accuracy Unlabeled: nan
+- Accuracy Stamp: 0.2744
+- Iou Unlabeled: 0.0
+- Iou Stamp: 0.2744
